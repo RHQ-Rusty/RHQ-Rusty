@@ -1,14 +1,21 @@
 ```py
+## Native Modules
+from os import system
+import sys
+
+## Local Imports
 import finesse
 import reader
 
+## A Graceful Dumbass
 class Rusty:
     def __init__(self):
         self.variables = {
             'name': 'redacted',
             'age': 'redacted',
             'profession': 'Versatile Integrative Development / Online Freelancing.',
-            'languages': ('English', 'French', 'Spanish', 'Russian')
+            'spokenLanguages': ['English', 'French', 'Spanish', 'Russian'],
+            'codeLanguages': ['HTML', 'PHP', 'JS', 'C/C++', '(some) C#', 'Python', 'Java', '(some) Delphi']
         }
 
     def description(self):
@@ -21,7 +28,15 @@ class Rusty:
             elif index == 2:
                 print(f'Profession: {value}')
             elif index == 3:
-                print(f'Languages: {value}')
+                print('Spoken Languages:')
+                for language in spokenLanguages:
+                    print(f'\t- {language}')
+            elif index == 4:
+                print('Code Languages:')
+                for language in codeLanguages:
+                    print(f'\t- {language}')
+            else:
+                print('Why is this happening?')
 
     def links(self):
         platforms = {
@@ -37,14 +52,21 @@ class Rusty:
 
 
 if __name__ == '__main__':
-    me = Rusty()
-    me.description()
-    me.links()
-    reader.Mother().finesse()
+    try:
+        me = Rusty()
+        me.description()
+        me.links()
+        reader.Mother().finesse()
+    except:
+        print(f'This is me, but failing.')
+        system("pause > NUL")
+        sys.exit()
 ```
 
+<!-- Credit for Base Theme to https://github.com/zoony1337 -->
+
 <!--
-**RHQ-Rusty/RHQ-Rusty** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+DEFAULT // HERE FROM GITHUB
 
 Here are some ideas to get you started:
 
