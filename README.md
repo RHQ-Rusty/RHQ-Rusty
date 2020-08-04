@@ -63,6 +63,8 @@ if __name__ == '__main__':
         sys.exit()
 ```
 
+![My Stats](https://github-readme-stats.vercel.app/api?username=RHQ-Rusty&show_icons=true)
+
 <!-- Credit for Base Theme to https://github.com/zoony1337 -->
 
 <!--
