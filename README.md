@@ -15,7 +15,7 @@ class Rusty:
             'age': 'redacted',
             'profession': 'Versatile Integrative Development / Online Freelancing.',
             'spokenLanguages': ['English', 'French', 'Spanish', 'Russian'],
-            'codeLanguages': ['HTML', 'PHP', 'JS', 'C/C++', '(some) C#', 'Python', 'Java', '(some) Delphi']
+            'codeLanguages': ['HTML', 'PHP', 'JS', 'C/C++', 'C#', 'Python', 'Java', '(some) Delphi']
         }
 
     def description(self):
@@ -42,8 +42,8 @@ class Rusty:
         platforms = {
             'Website': 'https://rhq.pw/',
             'Landing Page': 'https://xelta.rhq.pw/',
-            'Discord Username': 'Dumbledoofus#0420',
-            'Discord Server': 'https://discord.gg/97VBSbA'
+            'Discord Username': '!xelta#0420',
+            'Discord Server': 'redacted'
         }
 
         print('\n-----Contact-----')
@@ -59,8 +59,7 @@ if __name__ == '__main__':
         reader.Mother().finesse()
     except:
         print(f'This is me, but failing.')
-        system("pause > NUL")
-        sys.exit()
+        sys.exit(-1)
 ```
 
 ![My Stats](https://github-readme-stats.vercel.app/api?username=RHQ-Rusty&show_icons=true)
